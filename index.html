@@ -7,7 +7,6 @@
 <body>
 
     <h2>ASA Chat 1</h2>
-
     <style type='text/css'>
         .embeddedServiceHelpButton .helpButton .uiButton {
             background-color: #005290;
@@ -44,16 +43,16 @@
             embedded_svc.settings.entryFeature = 'LiveAgent';
 
             embedded_svc.init(
-                'https://asa23-sc1-1.my.salesforce.com',
-                'https://asa23-sc1-1.my.site.com/consumer',
+                'https://ddm000000ji6emag.my.salesforce.com',
+                'https://ddm000000ji6emag.my.site.com/liveAgentSetupFlow',
                 gslbBaseURL,
-                '00DDm000000IAnW',
-                'LiveAgent', {
+                '00DDm000000JI6e',
+                'Chat', {
                     baseLiveAgentContentURL: 'https://c.la1-c1-ia6.salesforceliveagent.com/content',
-                    deploymentId: '572Dm000000oUJa',
-                    buttonId: '573Dm000000oUFc',
+                    deploymentId: '572Dm00000008Mn',
+                    buttonId: '573Dm00000008RK',
                     baseLiveAgentURL: 'https://d.la1-c1-ia6.salesforceliveagent.com/chat',
-                    eswLiveAgentDevName: 'LiveAgent',
+                    eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IDm0000004ElOMAU_186a3f87eef',
                     isOfflineSupportEnabled: false
                 }
             );
@@ -61,7 +60,7 @@
 
         if (!window.embedded_svc) {
             var s = document.createElement('script');
-            s.setAttribute('src', 'https://asa23-sc1-1.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+            s.setAttribute('src', 'https://ddm000000ji6emag.my.salesforce.com/embeddedservice/5.0/esw.min.js');
             s.onload = function() {
                 initESW(null);
             };
